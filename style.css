@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #00aaff;
+}
+
+
+.hero-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: #181818;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Espaço entre a imagem e o texto */
+}
+
+.profile-image-container {
+    flex-basis: 35%; /* Largura da coluna da imagem */
+    text-align: center;
+}
+
+.profile-image-container img {
+    width: 280px; /* Tamanho da imagem */
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+    border: 7px solid #2a2a2a; /* Borda da imagem */
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.3); /* Sombra sutil azulada */
+}
+
+.intro-text-container {
+    flex-basis: 60%; /* Largura da coluna de texto */
+}
+
+.hero-subtitle {
+    color: #00aaff; /* Azul para o subtítulo */
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.intro-text-container h1 {
+    font-size: 3.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-description {
+    font-size: 1rem;
+    color: #bbb; /* Cinza mais claro para a descrição */
+    margin-bottom: 2rem;
+}
+
+.hero-buttons .btn {
+    margin-right: 1rem;
+    margin-bottom: 1rem; /* Para empilhar em mobile */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #00aaff;
+    color: #121212; /* Texto escuro para contraste */
+    border: 2px solid #00aaff;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: #00aaff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ccc;
+    border: 2px solid #555;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+    color: #fff;
+    border-color: #555;
+}
+
+.social-icons {
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.2rem; /* Aumente se usar ícones de fonte */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00aaff;
+}
+
+/* Seções de Conteúdo Geral */
+.content-section {
+    padding: 4rem 0;
+    background-color: #1e1e1e; /* Cor de fundo para seções de conteúdo */
+    margin-bottom: 1px; /* Linha sutil de separação ou sobreposição */
+}
+.content-section:nth-child(even) { /* Alternar cor de fundo se desejar */
+    /* background-color: #1a1a1a; */
+}
+
+
+.content-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.content-section h2::after { /* Linha decorativa abaixo do título da seção */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #00aaff;
+    border-radius: 2px;
+}
+
+/* Estilos para Habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background-color: #2a2a2a; /* Fundo para cada categoria de skill */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.skill-category h3 {
+    color: #00aaff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category ul li {
+    margin-bottom: 0.5rem;
+    color: #bbb;
+}
+
+/* Estilos para Experiência e Certificações */
+.job, .certification-item {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #00aaff; /* Destaque na lateral */
+}
+
+.job h3, .certification-item h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.job p, .certification-item p {
+    margin-bottom: 0.5rem;
+    color: #bbb;
+}
+.job p strong, .certification-item p strong {
+    color: #ddd;
+}
+
+.job ul {
+    list-style-position: inside;
+    padding-left: 0;
+    color: #bbb;
+}
+.job ul li {
+    margin-bottom: 0.3rem;
+}
+
+/* Estilos para Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mantém o layout responsivo */
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+/* NOVO ESTILO PARA A IMAGEM DO PROJETO */
+.project-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card (respeitando o padding) */
+    height: 200px; /* Defina uma altura fixa para as imagens dos projetos */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer. Pode cortar partes da imagem. */
+    /* object-fit: contain; */ /* Alternativa: Garante que toda a imagem apareça, podendo deixar espaços vazios. */
+    border-radius: 6px; /* Bordas arredondadas para a imagem */
+    margin-bottom: 1rem; /* Espaço entre a imagem e o título do projeto */
+    background-color: #333; /* Cor de fundo caso a imagem demore a carregar ou não exista */
+}
+
+.project-card h3 {
+    color: #00aaff;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    color: #bbb;
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+    flex-grow: 1; 
+}
+.project-card p strong {
+    color: #ddd;
+}
+.project-card .project-impact {
+    font-style: italic;
+    color: #00caff; 
+}
+.project-card .btn-link { 
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: auto; 
+}
+.project-card .btn-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Estilos para Contato */
+.contact-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.contact-info a {
+    color: #00aaff;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #181818;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 1rem;
+    }
+    nav ul li {
+        display: block; /* Menu empilhado */
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .hero-container {
+        flex-direction: column; /* Empilha a imagem e o texto */
+        text-align: center;
+    }
+    .profile-image-container img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 2rem;
+    }
+    .intro-text-container h1 {
+        font-size: 2.5rem;
+    }
+    .hero-description {
+        font-size: 0.95rem;
+    }
+    .hero-buttons {
+        display: flex;
+        flex-direction: column; /* Botões empilhados */
+        align-items: center;
+    }
+    .hero-buttons .btn {
+        width: 80%;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    .content-section h2 {
+        font-size: 2rem;
+    }
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr; /* Uma coluna para grids */
+    }
+}
