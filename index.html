@@ -1,215 +1,392 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<script>document.documentElement.classList.add('js');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Felipe Pontes</title>
+    <title>Felipe Pontes | Analista de Projetos & Desenvolvedor</title>
+    <meta name="description" content="Portfólio profissional de Felipe Pontes — Analista de Projetos, Scrum Master e entusiasta de desenvolvimento de software.">
+    <meta name="theme-color" content="#060810">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="images/png" href="images/favicon.png">
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
 <body>
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <a href="#home">F</a> </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li> <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#projetos">Projetos</a></li> <li><a href="#certificacoes">Certificações</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    </ul>
-            </nav>
+
+    <!-- ============ INTRO CINEMATOGRÁFICA ============ -->
+    <div id="intro" class="intro" role="dialog" aria-label="Tela de introdução">
+        <div class="intro__bg" aria-hidden="true">
+            <div class="intro__grid"></div>
+            <div class="intro__glow intro__glow--1"></div>
+            <div class="intro__glow intro__glow--2"></div>
+            <div class="intro__noise"></div>
         </div>
-    </header>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="container hero-container">
-                <div class="profile-image-container">
-                    <img src="images/MyPhoto.jpg" alt="Foto de [Seu Nome]">
-                </div>
-                <div class="intro-text-container">
-                    <p class="hero-subtitle">OLÁ, EU SOU ANALISTA DE PROJETOS & ENTUSIASTA DE DESENVOLVIMENTO</p> <h1>FELIPE PONTES DOS SANTOS</h1>
-                    <p class="hero-description">
-                        Atualmente estou atuando como Scrum Master.
-                        Sou um entusiasta de tecnologia, sempre buscando novas oportunidades para aprendizado e desenvolvimento pessoal e profissional.
-                        Durante minha trajetória, desenvolvi uma base forte em programação, algoritmos, arquitetura de software e metodologias ágeis.
-                        Minhas competências incluem: [.NET, JS, Front-End/Back-End], implementação de sistemas, Scrum, Kanban,
-                        foco em entrega contínua e melhoria constante. Qualidade de software, testes e automação também são áreas de meu interesse.
-                        Meu objetivo é expandir minhas habilidades e contribuir para projetos inovadores que tenham um impacto positivo.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="seu-cv.pdf" download class="btn btn-primary">Download CV</a>
-                        <a href="#contato" class="btn btn-secondary">Contato</a>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/ponthezs/" target="_blank" title="LinkedIn">LinkedIn</a>
-                        <a href="https://github.com/Ponthezs" target="_blank" title="GitHub">GitHub</a>
-                        <a href="mailto:pontesfelipe835@gmail.com" title="Email">Email</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="intro__content">
+            <p class="intro__eyebrow" data-anim="eyebrow">PORTFÓLIO&nbsp;PESSOAL</p>
 
-        <section id="sobre" class="content-section">
-            <div class="container">
-                <h2>Sobre Mim</h2>
-                <p>
-                    Minha paixão pela agilidade e pelo papel de Scrum Master é complementada pela minha vivência prática em desenvolvimento.
-                    Isso me permite não apenas facilitar cerimônias e remover impedimentos, mas também entender sobre
-                    os desafios técnicos da equipe, promovendo uma comunicação mais eficaz e colaborativa.
-                </p>
-                <p>
-                    Acredito na liderança servidora, na transparência e na melhoria contínua como pilares para construir times de alta performance
-                    e entregar produtos de valor. Busco constantemente aprimorar meus conhecimentos.
-                </p>
-            </div>
-        </section>
+            <h1 class="intro__name" aria-label="Felipe Pontes">
+                <span class="intro__word" aria-hidden="true">
+                    <span class="intro__letter" style="--i:0">F</span><span class="intro__letter" style="--i:1">E</span><span class="intro__letter" style="--i:2">L</span><span class="intro__letter" style="--i:3">I</span><span class="intro__letter" style="--i:4">P</span><span class="intro__letter" style="--i:5">E</span>
+                </span>
+                <span class="intro__word" aria-hidden="true">
+                    <span class="intro__letter" style="--i:6">P</span><span class="intro__letter" style="--i:7">O</span><span class="intro__letter" style="--i:8">N</span><span class="intro__letter" style="--i:9">T</span><span class="intro__letter" style="--i:10">E</span><span class="intro__letter" style="--i:11">S</span>
+                </span>
+            </h1>
 
-        <section id="habilidades" class="content-section">
-            <div class="container">
-                <h2>Habilidades</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Scrum & Agile</h3>
-                        <ul>
-                            <li>Framework Scrum</li>
-                            <li>Kanban / Lean</li>
-                            <li>Métricas Ágeis</li>
-                            <li>Facilitação & Coaching</li>
-                            <li>Gestão de Impedimentos</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Ferramentas de Gestão</h3>
-                        <ul>
-                            <li>Microsoft 365 / Azure DevOps</li>
-                            <li>Trello / Project Standart</li>
-                            <li>Miro</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Desenvolvimento</h3>
-                        <ul>
-                            <li>Linguagens: JS, Python, Front-End</li>
-                            <li>Frameworks: React, Node.js</li>
-                            <li>Bancos de Dados: SQL, Oracle</li>
-                            <li>Controle de Versão: Git</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Interpessoais</h3>
-                        <ul>
-                            <li>Comunicação</li>
-                            <li>Liderança Servidora</li>
-                            <li>Resolução de Problemas</li>
-                            <li>Adaptabilidade</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <p class="intro__subtitle" data-anim="subtitle">
+                Analista de Projetos <span class="intro__dot">•</span> Tecnologia <span class="intro__dot">•</span> Desenvolvimento
+            </p>
 
-        <section id="experiencia" class="content-section">
-            <div class="container">
-                <h2>Experiência Profissional</h2>
-                <div class="job">
-                    <h3>Assistente de Projetos JR | Scrum Master</h3>
-                    <p><strong>Benner Saúde</strong> | Maringá, Paraná</p>
-                    <p><em>Fev/2024 – Atualmente</em></p>
+            <button type="button" id="introBtn" class="intro__button" data-anim="button">
+                <span>Acessar Portfólio</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="intro__hint" data-anim="hint" aria-hidden="true">
+            <span>role ou clique para entrar</span>
+            <div class="intro__hint-line"></div>
+        </div>
+    </div>
+
+    <noscript>
+        <style>
+            #intro{ display:none !important; }
+            #site{ opacity:1 !important; transform:none !important; filter:none !important; }
+        </style>
+    </noscript>
+
+    <!-- ============ SITE PRINCIPAL ============ -->
+    <div id="site" class="site">
+
+        <div id="top-sentinel"></div>
+
+        <header id="header">
+            <div class="container header-container">
+                <a href="#home" class="logo">
+                    <span class="logo__mark">FP</span>
+                </a>
+
+                <nav id="nav" class="nav">
                     <ul>
-                        <li>Gestão e análise de indicadores para melhoria contínua.</li>
-                        <li>Suporte na tomada de decisões gerenciais.</li>
-                        <li>Colaborei com POs para refinar o backlog do produto.</li>
-                        <li> Controle e distribuição de demandas da equipe.</li>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                        <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                        <li><a href="#certificacoes" class="nav-link">Certificações</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
                     </ul>
-                </div>
-                <div class="job">
-                    <h3>Jovem Aprendiz</h3>
-                    <p><strong>Benner Sáude</strong> | Maringá, Paraná</p>
-                    <p><em>Out/2021 – Mar/2023</em></p>
-                    <ul>
-                        <li>Gestão de fornecedores e contratos.</li>
-                        <li>Controle financeiro e faturamento de projetos.</li>
-                        <li>Participei ativamente de equipes ágeis.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                </nav>
 
-        <section id="projetos" class="content-section">
-            <div class="container">
-                <h2>Meus Principais Projetos</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="images/placeholder-projeto1.png" alt="Print do Projeto 1" class="project-image">
-                        <h3>Automação Planner | Script</h3>
-                        <p><strong>Papel:</strong> Scrum Master</p>
-                        <p><strong>Descrição:</strong> ETL Script para Automação de Fluxo de Trabalho e Gestão de Projetos </p>
-                        <p><strong>Tecnologias:</strong> <div Scrum,="" Kanban=""></div></p>
-                        <p class="project-impact"><strong>Impacto:</strong> Eliminação Completa de Trabalho Manual: O impacto mais imediato é a automação de um processo que era 100% manual, repetitivo e demorado. Isso libera as equipes de uma tarefa de baixo valor.</p>
+                <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="hero-section">
+                <div class="hero-bg" aria-hidden="true">
+                    <div class="hero-glow hero-glow--1"></div>
+                    <div class="hero-glow hero-glow--2"></div>
+                </div>
+                <div class="container hero-container">
+                    <div class="profile-image-container" data-reveal="left">
+                        <div class="profile-image-ring">
+                            <img src="images/MyPhoto.jpg" alt="Foto de Felipe Pontes">
                         </div>
-                    <div class="project-card">
-                        <img src="images/placeholder-projeto2.png" alt="Print do Projeto 2" class="project-image">
-                        <h3>Minha Garagem</h3>
-                        <p><strong>Papel:</strong> Desenvolvedor </p>
-                        <p><strong>Descrição:</strong> Técnico</p>
-                        <p><strong>Tecnologias:</strong> Js, React</p>
-                        <p class="project-impact"><strong>Impacto:</strong> O objetivo do site foi simples apenas mostrar informações sobre a garagem e os veículos que eu ja possui.</p>
+                        <div class="profile-badge">
+                            <span class="profile-badge__dot"></span>
+                            Disponível para novas oportunidades
+                        </div>
                     </div>
+                    <div class="intro-text-container" data-reveal="right">
+                        <p class="hero-subtitle">OLÁ, EU SOU ANALISTA DE PROJETOS &amp; ENTUSIASTA DE DESENVOLVIMENTO</p>
+                        <h1>FELIPE PONTES <span>DOS SANTOS</span></h1>
+                        <p class="hero-description">
+                            Atualmente estou atuando como Scrum Master.
+                            Sou um entusiasta de tecnologia, sempre buscando novas oportunidades para aprendizado e desenvolvimento pessoal e profissional.
+                            Durante minha trajetória, desenvolvi uma base forte em programação, algoritmos, arquitetura de software e metodologias ágeis.
+                            Minhas competências incluem: [.NET, JS, Front-End/Back-End], implementação de sistemas, Scrum, Kanban,
+                            foco em entrega contínua e melhoria constante. Qualidade de software, testes e automação também são áreas de meu interesse.
+                            Meu objetivo é expandir minhas habilidades e contribuir para projetos inovadores que tenham um impacto positivo.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="seu-cv.pdf" download class="btn btn-primary">
+                                <span>Download CV</span>
+                            </a>
+                            <a href="#contato" class="btn btn-secondary">Contato</a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/ponthezs/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/Ponthezs" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="mailto:pontesfelipe835@gmail.com" title="Email" aria-label="Email">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M2.5 5.5A2 2 0 0 1 4.5 3.5h15a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2v-13zm2.2.5 7.3 5.47L19.3 6H4.7zm14.8 1.6-7.13 5.34a1 1 0 0 1-1.2 0L4.5 7.6V18.5h15V7.6z"/></svg>
+                                <span>Email</span>
+                            </a>
+                        </div>
                     </div>
+                </div>
+                <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+                    <span></span>
+                </a>
+            </section>
+
+            <section id="sobre" class="content-section">
+                <div class="container">
+                    <p class="section-eyebrow" data-reveal="up">QUEM SOU EU</p>
+                    <h2 data-reveal="up">Sobre Mim</h2>
+                    <div class="about-grid">
+                        <p data-reveal="up">
+                            Minha paixão pela agilidade e pelo papel de Scrum Master é complementada pela minha vivência prática em desenvolvimento.
+                            Isso me permite não apenas facilitar cerimônias e remover impedimentos, mas também entender sobre
+                            os desafios técnicos da equipe, promovendo uma comunicação mais eficaz e colaborativa.
+                        </p>
+                        <p data-reveal="up">
+                            Acredito na liderança servidora, na transparência e na melhoria contínua como pilares para construir times de alta performance
+                            e entregar produtos de valor. Busco constantemente aprimorar meus conhecimentos.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="habilidades" class="content-section content-section--alt">
+                <div class="container">
+                    <p class="section-eyebrow" data-reveal="up">O QUE EU SEI FAZER</p>
+                    <h2 data-reveal="up">Habilidades</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category" data-reveal="up" style="--d:0">
+                            <div class="skill-category__icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke-linecap="round"/></svg>
+                            </div>
+                            <h3>Scrum &amp; Agile</h3>
+                            <ul class="tag-list">
+                                <li>Framework Scrum</li>
+                                <li>Kanban / Lean</li>
+                                <li>Métricas Ágeis</li>
+                                <li>Facilitação &amp; Coaching</li>
+                                <li>Gestão de Impedimentos</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category" data-reveal="up" style="--d:1">
+                            <div class="skill-category__icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v14" stroke-linecap="round"/></svg>
+                            </div>
+                            <h3>Ferramentas de Gestão</h3>
+                            <ul class="tag-list">
+                                <li>Microsoft 365 / Azure DevOps</li>
+                                <li>Trello / Project Standard</li>
+                                <li>Miro</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category" data-reveal="up" style="--d:2">
+                            <div class="skill-category__icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 9l-4 4 4 4M16 9l4 4-4 4M14 4l-4 16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Desenvolvimento</h3>
+                            <ul class="tag-list">
+                                <li>Linguagens: JS, Python, Front-End</li>
+                                <li>Frameworks: React, Node.js</li>
+                                <li>Bancos de Dados: SQL, Oracle</li>
+                                <li>Controle de Versão: Git</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category" data-reveal="up" style="--d:3">
+                            <div class="skill-category__icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20c0-2.5-2-4-5-4s-5 1.5-5 4M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Interpessoais</h3>
+                            <ul class="tag-list">
+                                <li>Comunicação</li>
+                                <li>Liderança Servidora</li>
+                                <li>Resolução de Problemas</li>
+                                <li>Adaptabilidade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experiencia" class="content-section">
+                <div class="container">
+                    <p class="section-eyebrow" data-reveal="up">MINHA TRAJETÓRIA</p>
+                    <h2 data-reveal="up">Experiência Profissional</h2>
+                    <div class="timeline">
+                        <div class="job" data-reveal="up" style="--d:0">
+                            <div class="job__dot"></div>
+                            <div class="job__content">
+                                <span class="job__period">Fev/2024 – Atualmente</span>
+                                <h3>Assistente de Projetos JR | Scrum Master</h3>
+                                <p class="job__company">Benner Saúde · Maringá, Paraná</p>
+                                <ul>
+                                    <li>Gestão e análise de indicadores para melhoria contínua.</li>
+                                    <li>Suporte na tomada de decisões gerenciais.</li>
+                                    <li>Colaborei com POs para refinar o backlog do produto.</li>
+                                    <li>Controle e distribuição de demandas da equipe.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="job" data-reveal="up" style="--d:1">
+                            <div class="job__dot"></div>
+                            <div class="job__content">
+                                <span class="job__period">Out/2021 – Mar/2023</span>
+                                <h3>Jovem Aprendiz</h3>
+                                <p class="job__company">Benner Saúde · Maringá, Paraná</p>
+                                <ul>
+                                    <li>Gestão de fornecedores e contratos.</li>
+                                    <li>Controle financeiro e faturamento de projetos.</li>
+                                    <li>Participei ativamente de equipes ágeis.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projetos" class="content-section content-section--alt">
+                <div class="container">
+                    <p class="section-eyebrow" data-reveal="up">O QUE EU CONSTRUÍ</p>
+                    <h2 data-reveal="up">Meus Principais Projetos</h2>
+                    <div class="projects-grid">
+                        <div class="project-card" data-reveal="up" style="--d:0">
+                            <div class="project-image-wrap">
+                                <img src="images/placeholder-projeto1.png" alt="Print do Projeto Automação Planner" class="project-image" loading="lazy">
+                            </div>
+                            <div class="project-card__body">
+                                <h3>Automação Planner | Script</h3>
+                                <p class="project-role"><strong>Papel:</strong> Scrum Master</p>
+                                <p><strong>Descrição:</strong> ETL Script para automação de fluxo de trabalho e gestão de projetos.</p>
+                                <div class="tag-list tag-list--pills">
+                                    <span>Scrum</span>
+                                    <span>Kanban</span>
+                                </div>
+                                <p class="project-impact"><strong>Impacto:</strong> Eliminação completa de trabalho manual — o impacto mais imediato é a automação de um processo que era 100% manual, repetitivo e demorado, liberando as equipes de uma tarefa de baixo valor.</p>
+                            </div>
+                        </div>
+                        <div class="project-card" data-reveal="up" style="--d:1">
+                            <div class="project-image-wrap">
+                                <img src="images/placeholder-projeto2.png" alt="Print do Projeto Minha Garagem" class="project-image" loading="lazy">
+                            </div>
+                            <div class="project-card__body">
+                                <h3>Minha Garagem</h3>
+                                <p class="project-role"><strong>Papel:</strong> Desenvolvedor</p>
+                                <p><strong>Descrição:</strong> Projeto técnico pessoal.</p>
+                                <div class="tag-list tag-list--pills">
+                                    <span>JavaScript</span>
+                                    <span>React</span>
+                                </div>
+                                <p class="project-impact"><strong>Impacto:</strong> O objetivo do site foi simples: apenas mostrar informações sobre a garagem e os veículos que eu já possuo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificacoes" class="content-section">
+                <div class="container">
+                    <p class="section-eyebrow" data-reveal="up">RECONHECIMENTO &amp; FORMAÇÃO</p>
+                    <h2 data-reveal="up">Certificações</h2>
+                    <div class="cert-grid">
+                        <div class="certification-item" data-reveal="up" style="--d:0">
+                            <div class="certification-item__icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 21l5-2.5L17 21l-1.5-8.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <div>
+                                <h3>Gerente Ágil</h3>
+                                <p class="cert-meta"><strong>Organização:</strong> Alura &nbsp;|&nbsp; <strong>Data:</strong> Set/2022</p>
+                                <p><strong>Descrição:</strong> Gestão Ágil e Scrum pela Alura, com foco na liderança de times de alta performance e otimização de fluxos de trabalho. Capacitado para atuar como Scrum Master ou Agile Master, facilitando cerimônias, removendo impedimentos e utilizando métricas (como Lead Time e Throughput) para garantir a entrega contínua de valor. Forte base em gestão de conflitos e cultura de melhoria contínua (Kaizen).</p>
+                            </div>
+                        </div>
+                        <div class="certification-item" data-reveal="up" style="--d:1">
+                            <div class="certification-item__icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 21l5-2.5L17 21l-1.5-8.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <div>
+                                <h3>Engenharia de Software</h3>
+                                <p class="cert-meta"><strong>Organização:</strong> Alura &nbsp;|&nbsp; <strong>Data:</strong> Dez/2022</p>
+                                <p><strong>Descrição:</strong> Formação em Engenharia de Software pela Alura, com foco na construção de sistemas escaláveis, sustentáveis e de alta qualidade. Aprofundamento técnico em arquitetura de software (Clean Architecture), padrões de projeto (Design Patterns) e boas práticas de desenvolvimento (SOLID), visando não apenas a escrita de código, mas a longevidade e a manutenibilidade das aplicações.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="cert-subheading" data-reveal="up">Formação Acadêmica</h3>
+                    <div class="cert-grid cert-grid--edu">
+                        <div class="certification-item certification-item--edu" data-reveal="up" style="--d:0">
+                            <div class="certification-item__icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8l10-5 10 5-10 5-10-5z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <p><strong>Bacharelado Engenharia de Software</strong> — Unicesumar (2024 – 2028)</p>
+                        </div>
+                        <div class="certification-item certification-item--edu" data-reveal="up" style="--d:1">
+                            <div class="certification-item__icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8l10-5 10 5-10 5-10-5z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <p><strong>Ensino Médio Completo</strong> — Parigot de Souza (2017 – 2023)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato" class="content-section content-section--alt content-section--contact">
+                <div class="container">
+                    <p class="section-eyebrow" data-reveal="up">VAMOS CONVERSAR</p>
+                    <h2 data-reveal="up">Entre em Contato</h2>
+                    <p class="contact-intro" data-reveal="up">Estou disponível para novas oportunidades e colaborações. Vamos conversar!</p>
+                    <div class="contact-grid" data-reveal="up">
+                        <a class="contact-card" href="mailto:pontesfelipe835@gmail.com">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <div>
+                                <span class="contact-card__label">Email</span>
+                                <span class="contact-card__value">pontesfelipe835@gmail.com</span>
+                            </div>
+                        </a>
+                        <a class="contact-card" href="https://www.linkedin.com/in/ponthezs/" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                            <div>
+                                <span class="contact-card__label">LinkedIn</span>
+                                <span class="contact-card__value">Felipe Pontes</span>
+                            </div>
+                        </a>
+                        <a class="contact-card" href="https://github.com/Ponthezs" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+                            <div>
+                                <span class="contact-card__label">GitHub</span>
+                                <span class="contact-card__value">Felipe Pontes</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-container">
+                <p>&copy; <span id="currentYear"></span> Felipe Pontes. Todos os direitos reservados.</p>
+                <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
             </div>
-        </section>
+        </footer>
+    </div>
 
-
-        <section id="certificacoes" class="content-section">
-            <div class="container">
-                <h2>Certificações</h2>
-                <div class="certification-item">
-                    <h3>Gerente Ágil</h3>
-                    <p><strong>Organização:</strong> Alura | <strong>Data:</strong> Set/2022</p>
-                    <p><strong>Descrição:</strong> Gestão Ágil e Scrum pela Alura, com foco na liderança de times de alta performance e otimização de fluxos de trabalho. Capacitado para atuar como Scrum Master ou Agile Master, facilitando cerimônias, removendo impedimentos e utilizando métricas (como Lead Time e Throughput) para garantir a entrega contínua de valor. Forte base em gestão de conflitos e cultura de melhoria contínua (Kaizen).</p>
-                </div>
-                <div class="certification-item">
-                    <h3>Engenharia de Software</h3>
-                    <p><strong>Organização:</strong> Alura | <strong>Data:</strong> Dez/2022</p>
-                    <p><strong>Descrição:</strong> Formação em Engenharia de Software pela Alura, com foco na construção de sistemas escaláveis, sustentáveis e de alta qualidade. Aprofundamento técnico em arquitetura de software (Clean Architecture), padrões de projeto (Design Patterns) e boas práticas de desenvolvimento (SOLID), visando não apenas a escrita de código, mas a longevidade e a manutenibilidade das aplicações.</p>
-                </div>
-                <hr>
-                <h3>Formação Acadêmica</h3>
-                <div class="certification-item">
-                     <p><strong>Bacharelado Engenharia de Software</strong> - Unicesumar (2024 - 2028)</p>
-                </div>
-                <div class="certification-item">
-                     <p><strong>Ensino Médio Completo</strong> - Parigot de Souza (2017 - 2023)</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contato" class="content-section">
-            <div class="container">
-                <h2>Entre em Contato</h2>
-                <p>Estou disponível para novas oportunidades e colaborações. Vamos conversar!</p>
-                <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:pontesfelipe835@gmail.com">pontesfelipe835@gmail.com</a></p>
-                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ponthezs/" target="_blank">Felipe Pontes</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/Ponthezs" target="_blank">Felipe Pontes</a></p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="currentYear"></span> Felipe Pontes. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js" defer></script>
+    <script src="js/intro.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

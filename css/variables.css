@@ -1,0 +1,105 @@
+/* ===================================================================
+   RESET & VARIÁVEIS GLOBAIS
+   =================================================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores base */
+    --bg: #060810;
+    --bg-elevated: #0b0f1a;
+    --bg-alt: #090c15;
+    --surface: #10162a;
+    --surface-hover: #151c33;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.16);
+
+    /* Texto */
+    --text: #eef1f8;
+    --text-muted: #9aa5bd;
+    --text-dim: #5c6685;
+
+    /* Acentos */
+    --accent: #2dd4ff;
+    --accent-2: #8b5cf6;
+    --accent-soft: rgba(45, 212, 255, 0.12);
+    --accent-2-soft: rgba(139, 92, 246, 0.12);
+
+    --gradient: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+    --gradient-text: linear-gradient(135deg, #6ff0d8 0%, var(--accent) 45%, var(--accent-2) 100%);
+
+    --shadow-glow: 0 0 40px rgba(45, 212, 255, 0.12);
+    --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+    /* Raios */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 24px;
+    --radius-full: 999px;
+
+    /* Tipografia */
+    --font-display: 'Space Grotesk', 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+    /* Timing */
+    --ease: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+    --container: 1140px;
+    --header-h: 76px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    background-color: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: var(--container);
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Respeita usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
