@@ -599,6 +599,22 @@ header.is-scrolled {
     margin-bottom: 0.9rem;
 }
 
+.job__summary {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+}
+
+.job__highlight {
+    margin-top: 1rem;
+    padding-top: 0.9rem;
+    border-top: 1px dashed var(--border);
+    font-size: 0.88rem;
+    font-style: italic;
+    color: #7fe6d8;
+}
+
 .job ul {
     padding-left: 0;
     color: var(--text-muted);
